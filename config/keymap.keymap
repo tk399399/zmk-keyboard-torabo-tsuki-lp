@@ -100,6 +100,54 @@
 #endif
             >;
         };
+
+        layer_5 {
+            display-name = "L5";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+#if defined(TORABO_TSUKI_LP_KSCAN_4_DIRECTION_SWITCH)
+&trans &trans &trans &trans &trans
+#elif defined(TORABO_TSUKI_LP_INPUT_HIRES_DIAL)
+&trans
+#endif
+            >;
+        };
+
+        layer_6 {
+            display-name = "L6";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+#if defined(TORABO_TSUKI_LP_KSCAN_4_DIRECTION_SWITCH)
+&trans &trans &trans &trans &trans
+#elif defined(TORABO_TSUKI_LP_INPUT_HIRES_DIAL)
+&trans
+#endif
+            >;
+        };
+
+        layer_7 {
+            display-name = "L7";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+#if defined(TORABO_TSUKI_LP_KSCAN_4_DIRECTION_SWITCH)
+&trans &trans &trans &trans &trans
+#elif defined(TORABO_TSUKI_LP_INPUT_HIRES_DIAL)
+&trans
+#endif
+            >;
+        };
     };
 };
 

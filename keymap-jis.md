@@ -41,6 +41,10 @@ N M , . / の位置は、順にシングルクォート、ダブルクォート�
 - 内側のクリックキー（通常時の左クリック／右クリック位置）は中クリックになります。
 - スクロール速度は `snippets/input-listener` と `snippets/input-split-listener` の `&zip_scroll_scaler 1 4` で調整します（分母を大きくすると遅くなる）。
 
+## レイヤー5〜7
+
+中身はすべて透過（&trans）の空きレイヤーです。ZMK Studioで自由に割り当ててください。
+
 ## ソースとStudioの関係
 
 `config/jis.h`でJIS用HIDエイリアスを定義し、`config/keymap.keymap`で使用しています。
