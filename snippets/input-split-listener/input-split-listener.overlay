@@ -14,5 +14,13 @@
         device = <&pointing_device_split>;
         status = "okay";
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+
+        // スクロールレイヤー(layer_4)中はこのトラックボールをスクロールに変換
+        scroller {
+            layers = <4>;
+            input-processors = <&zip_xy_transform INPUT_TRANSFORM_X_INVERT  // Yは反転しない=手前に転がすと下スクロール
+                                &zip_xy_to_scroll_mapper
+                                &zip_scroll_scaler 1 4>;
+        };
      };
 };
